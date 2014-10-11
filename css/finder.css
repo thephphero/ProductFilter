@@ -1,0 +1,84 @@
+/* 
+    Document   : Filter CSS Styles
+    Created on : 04.09.2014, 14:44:31
+    Author     : celsoluiz
+    Description: Style Sheet for the Product filter
+*/
+
+ @media screen and (-webkit-min-device-pixel-ratio:0) and (min-width: 768px) { 
+
+  ::i-block-chrome, .row.safari-fix  {
+    display:table!important;
+  }
+ ::i-block-chrome, .row.safari-fix [class*="col-"] {
+    display:table-cell!important;
+    float:none!important;
+   width:auto!important;
+   padding-left:2%!important;
+   padding-right:2%!important;
+  }
+
+} /* end safari rou*/
+  
+body{
+    background-color: #eee;
+
+}
+.main{
+    margin:0px auto;
+    width:748px!important;
+    background-color: #fff;
+    overflow: auto;
+}
+.container{
+    margin:0px auto;
+    width:748px!important;
+    background-color: #fff;
+}
+label > p{
+    padding-top: 5px;
+    text-align:center;
+}
+label > input[type=radio],input[type=checkbox]{ /* HIDE RADIO */
+    display:none;
+}
+label > input + img{ /* IMAGE STYLES */
+    cursor:pointer;
+    border:2px solid transparent;
+    display:block;
+    width:130px;
+
+}
+label > input:checked + img{ /* (CHECKED) IMAGE STYLES */
+    border:5px solid #eee;
+}
+
+label > input + img:hover{ /* (CHECKED) IMAGE STYLES */
+    border:5px solid #eee;
+}
+
+#result{
+    padding-top:15px;
+    border-top:2px solid #ccc;
+}
+
+#results ul{
+    list-style-type: none;
+}
+
+#results li{
+    line-height:25px;
+}
+input[type=text] { 
+    padding: 9px; 
+    border: solid 1px #E5E5E5; 
+    outline: 0; 
+    font: normal 13px/100% Verdana, Tahoma, sans-serif; 
+    width: 200px; 
+    background: #FFFFFF; 
+} 
+input:hover, textarea:hover, 
+input:focus, textarea:focus { 
+    border-color: #C9C9C9; 
+} 
+button{margin-left: 15px;}
